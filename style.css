@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+h1{
+    color:cadetblue;
+    padding-left: 16px;
+    border-left: 16px solid #31a8ee;
+    border-bottom: 2px dashed #31a9ee;
+}
+
+body {
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',monospace;
+  cursor: url('cursor.svg') 0 0, auto;
+}
+
+#welcomeToDarkWeb{
+  height:32px;
+  font-size: 24px;
+  text-align:center;
+  border-radius: 8px;
+  color : white;
+  font-weight: 1000;
+  background-color: rgb(168, 168, 168);
+}
+.icons img{
+  width :64px;
+  border-radius: 8px;
+}
+#iconLinks{
+    text-align:right;
+    padding-top: 8px;
+    border-radius: 32px;
+    background-color: gray;
+    height: 80px;
+}
+
+.backGround img{
+  width: 33%;
+    border-radius: 32px;
+}
+
+
+#detailed_info{
+ padding:16px;
+ color:red;
+}
+
+.hint{
+  font-size: 24px;
+   font-weight:bolder;
+}
