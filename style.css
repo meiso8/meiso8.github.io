@@ -21,9 +21,10 @@ font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒ�
     flex-wrap: wrap;       /* 画面幅に合わせて自動で折り返す */
     justify-content: center;/* 中央揃えにする */
     gap: 20px;             /* 動画同士の隙間（好みに合わせて変更可能） */
-    max-width: 1200px;     /* 全体の最大幅（お好みに合わせて変更可能） */
+    max-width: 100%;
     margin: 0 auto;        /* 全体を画面中央に寄せる */
   }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
