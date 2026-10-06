@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="glitch.js" defer></script>
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld0A-ItAAAAAEeTRnAuejA2sRWiVSN5WSrSG3uV"></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS"></script>
 
 </head>
 
@@ -103,7 +103,7 @@
   function onClick(e) {
     e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6Ld0A-ItAAAAAEeTRnAuejA2sRWiVSN5WSrSG3uV', {action: 'LOGIN'});
+      const token = await grecaptcha.enterprise.execute('6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS', {action: 'LOGIN'});
     });
   }
 </script>
