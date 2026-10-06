@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="glitch.js" defer></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS"></script>
+
 </head>
 
+  
 <body>
+
+  <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS', {action: 'LOGIN'});
+    });
+  }
+</script>
     <header>
         <h1 id="headTitle">meiso架空株式会社</h1>
 
@@ -18,7 +30,7 @@
             <ul>
                 <span><a href="game.html">【第Ⅲのめ】攻略サイト</a></span>
                 <span><a href="aboutUs.html">会社概要</a></span>
-                <span><a href="https://piapro.jp/hitotokurabezu8">お問い合わせ</a></span>
+                <span><a href="https://docs.google.com/forms/d/e/1FAIpQLSe4elKnL6DTUqj8GBy3EYIAFOePCcwwAPv9jPmPFT3CBMp1cA/viewform?usp=publish-editor">お問い合わせ</a></span>
             </ul>
         </nav>
       </header>
@@ -91,6 +103,16 @@
         <a href="https://www.youtube.com/@Kinmirai_wotaku" class="icons"><img src="Icons/yt_icon_red_digital.png"
                 alt="youtube" /></a>
     </div>
+
+    <script>
+function onClick(e) {
+  e.preventDefault();
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute('6LfH_-EtAAAAAEBvn6pFqCG0pyELaIYldINFQAQK', {action: 'contact_form'});
+  });
+}
+</script>
+
 </body>
 
 </html>
