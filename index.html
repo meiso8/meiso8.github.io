@@ -103,7 +103,14 @@
                 alt="youtube" /></a>
     </div>
 
-
+<script>
+    // チェックボックスにチェックが入ると自動的にこの関数が呼ばれます
+    function onCallback(token) {
+      console.log("=== 取得したトークン ===");
+      console.log(token);
+      alert("トークンを取得しました！コンソールログを確認してください。");
+    }
+  </script>
 </body>
 
 </html>
