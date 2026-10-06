@@ -15,14 +15,7 @@
   
 <body>
 
-  <script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS', {action: 'LOGIN'});
-    });
-  }
-</script>
+
     <header>
         <h1 id="headTitle">meiso架空株式会社</h1>
 
@@ -34,6 +27,8 @@
             </ul>
         </nav>
       </header>
+
+  <div class="g-recaptcha" data-sitekey="6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS"></div>
 
 <section class="glitch-section">
     	<div class="glitch">
@@ -104,13 +99,13 @@
                 alt="youtube" /></a>
     </div>
 
-    <script>
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute('6LfH_-EtAAAAAEBvn6pFqCG0pyELaIYldINFQAQK', {action: 'contact_form'});
-  });
-}
+  <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS', {action: 'LOGIN'});
+    });
+  }
 </script>
 
 </body>
