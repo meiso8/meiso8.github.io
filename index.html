@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="glitch.js" defer></script>
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
 </head>
 
@@ -28,7 +28,11 @@
         </nav>
       </header>
 
-  <div class="g-recaptcha" data-sitekey="6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS"></div>
+    <form action="" method="POST">
+      <div class="g-recaptcha" data-sitekey="6Ld0LOItAAAAAAs_h543yfk-DQEeRQXwQB-jyo5R" data-action="LOGIN"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
 
 <section class="glitch-section">
     	<div class="glitch">
@@ -99,14 +103,6 @@
                 alt="youtube" /></a>
     </div>
 
-<script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LfUDeItAAAAABqTGxPXclpH55jTAJJ--QzZLmUS', {action: 'LOGIN'});
-    });
-  }
-</script>
 
 </body>
 
