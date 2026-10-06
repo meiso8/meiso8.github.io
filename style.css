@@ -13,6 +13,10 @@ h2 {
   color: white;
 }
 
+.headTitle{
+    padding-left: 32px;
+}
+
 body {
   font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', monospace;
   cursor: url('cursor.svg') 0 0, auto;
@@ -21,8 +25,44 @@ body {
   padding: 0;
 }
 
+.slideshow-zoom{
 
 
+  border-radius: 32px;
+
+    position: relative;
+    overflow: hidden;
+  
+        width: 640px;
+        height: 360px;
+
+    li{
+        list-style: none;
+
+        animation: zooming 7s forwards;
+        img{
+        width: 100%;
+        height: 100%;
+        }
+        @keyframes zooming {
+      0% {
+          z-index: 1;
+          opacity: 0;
+      }
+    100% {
+       transform: scale(1.2);
+       opacity: 1;
+       z-index: 10;
+      }
+    }
+  }
+}
+.paddingLeft{
+    padding-left: 32px;
+}
+.paddingBottom{
+  padding-bottom: 16px;
+}
 /* グリッチ表示用エリア */
 .glitch-section {
   display: flex;
@@ -304,12 +344,6 @@ a:active {
   border-radius: 32px;
   background-color:rgb(92, 78, 96);
   height: 80px;
-}
-
-.backGround img  {
-  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  width: 33%;
-  border-radius: 32px;
 }
 
 .recaptcha-wrapper{
