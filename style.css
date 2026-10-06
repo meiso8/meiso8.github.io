@@ -21,6 +21,8 @@ body {
   padding: 0;
 }
 
+
+
 /* グリッチ表示用エリア */
 .glitch-section {
   display: flex;
@@ -304,12 +306,17 @@ a:active {
   height: 80px;
 }
 
-.backGround img {
+.backGround img  {
   animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   width: 33%;
   border-radius: 32px;
 }
 
+.recaptcha-wrapper{
+  display: flex;
+  width: 33%;
+  border-radius: 32px;
+}
 
 #detailed_info {
   padding: 16px;
