@@ -9,6 +9,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="glitch.js" defer></script>
     <script src="stalker.js" defer></script>
+        <script src="slide.js" defer></script>
   <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
 </head>
@@ -56,13 +57,25 @@
     <div class="g-recaptcha" data-sitekey="6Ld0LOItAAAAAAs_h543yfk-DQEeRQXwQB-jyo5R" data-action="LOGIN"></div>
 
   </div>
-  <h2 id="artWorks">Artworks</h2>
-  <div class="backGround">
-    <img src="Images/forYoutube _imageMeditate.jpg" alt="背景" />
-    <img src="Images/me.png" alt="背景" />
-    <img src="Images/image.png" alt="背景" />
-  </div>
-  <h2 id="sounds">Sounds</h2>
+
+
+  <h2 class = "headTitle">Artworks</h2>
+  <div class ="center">
+    <ul class="slideshow-zoom">
+    <li><img src="Images/forYoutube _imageMeditate.jpg" alt="背景" /></li>
+    <li><img src="Images/me.png" alt="背景" /></li>
+    <li><img src="Images/image.png" alt="背景" /></li>
+    </ul>
+    <div class ="paddingLeft">
+      <h2>アイテム獲得</h2>
+    <div class ="paddingBottom">誕生日プレゼントとして中学生から使用しており、
+      <br>研磨されているワコムの板タブレット
+      <br>デジタルイラストにどっぷりハマったのは
+      <br>高校生の頃で線画から逃避した結果厚塗りしている。</div>
+    <img src="Images/wacom.jpg" alt="wacomの板タブレット" />
+    </div>
+</div>
+  <h2 class = "headTitle">Sounds</h2>
   <div class ="center">
      <div>
   <div>KIRITAN</div>
@@ -81,7 +94,7 @@
   <audio controls src="Sounds/Meditate.wav"></audio>
   </div>
   </div>
-  <h2 id="games">Games</h2>
+  <h2 class = "headTitle">Games</h2>
   <!-- 3年生 -->
   <section class="year-section">
     <h2 class="year-title">3rd grade</h2>
@@ -154,6 +167,7 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
     </div>
   </section>
+
 
   <h2 id="links">Links</h2>
   <div id="iconLinks">
