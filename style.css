@@ -318,6 +318,41 @@ a:active {
   border-radius: 32px;
 }
 
+.center {
+  display: flex;
+  justify-content: center; /* 横方向の中央寄せ */
+  align-items: center;     /* 縦方向の中央寄せ */
+  flex-wrap: wrap;         /* 画面幅が狭くなった際に折り返す設定 */
+  gap: 20px;               /* 要素間の間隔 */
+  color: white;
+  padding: 16px;
+}
+
+#mouse-stalker {
+  pointer-events: none;
+  position: fixed;
+  top: -10px; 
+  left: -10px; 
+  width: 20px; 
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(0, 0);
+  transition: transform 0.5s; 
+  transition-timing-function: ease-out;
+  z-index: 999;
+  mix-blend-mode: difference;
+  
+
+  &.is_active {
+    top: -40px; 
+    left: -40px;
+    width: 80px;
+    height: 80px;
+    transition: 0.2s;
+  }
+}
+
 #detailed_info {
   padding: 16px;
   color: red;
