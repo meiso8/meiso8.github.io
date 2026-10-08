@@ -3,10 +3,10 @@
 
 /* $font: 'Ubuntu Mono', monospace; */
 h1 {
-  color: cadetblue;
+  color: #82C83C;
   padding-left: 16px;
-  border-left: 16px solid cadetblue;
-  border-bottom: 2px dashed cadetblue;
+  border-left: 16px solid #82C83C;
+  border-bottom: 2px dashed #82C83C;
 }
 
 h2 {
@@ -20,7 +20,7 @@ h2 {
 body {
   font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', monospace;
   cursor: url('cursor.svg') 0 0, auto;
-  background-color: rgb(36, 36, 36);
+  background-color:#291240;
   margin: 0;
   padding: 0;
 }
@@ -111,7 +111,7 @@ body {
   white-space: nowrap;
 }
 
-/* 色ズレの初期位置（幅を抑えました） */
+/* 色ズレの初期位置*/
 .glitch span:nth-child(1) {
   color: red;
   margin-left: 4px;
@@ -209,6 +209,7 @@ body {
   /* 見出し文字を中央揃え */
   margin-bottom: 40px;
   /* 学年ごとの間隔 */
+  color: white;
 }
 
 /* 見出しのデザイン */
@@ -218,27 +219,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* 動画を中央寄せで並べる設定 */
-.video-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* 動画を中央に並べる */
-  gap: 20px;
-  /* 動画同士の隙間 */
-}
-
-.video-grid iframe {
-  max-width: 100%;
-  /* スマホ表示時の溢れ防止 */
-}
-
 details {
   margin-bottom: 10px;
-  border: 1px solid rgb(36, 36, 36);
+  border: 1px solid#291240;
   border-radius: 5px;
   padding: 8px 12px;
-  background-color: rgb(67, 67, 67);
+  background-color:#5C288F;
   max-width: 400px;
 }
 
@@ -255,32 +241,32 @@ summary {
 .hint-content {
   margin-top: 8px;
   padding-top: 8px;
-  border-top: 1px dashed rgb(36, 36, 36);
+  border-top: 1px dashed #291240;
   color: white;
 }
 
 
 /* --- リンク全体の文字色設定 --- */
 a {
-  color: #4da6ff; /* 通常のリンク色（明るい水色） */
+  color:#5C8F28;/* 通常のリンク色 */
   text-decoration: none; /* 下線を消したい場合（任意） */
   transition: color 0.2s ease; /* 色変化を滑らかにする設定（任意） */
 }
 
 /* 訪問済みのリンク（すでにクリックしたことのあるページ） */
 a:visited {
-  color: #b388ff; /* 明るい薄紫色 */
+  color: #8F50CE;/* 明るい薄紫色 */
 }
 
 /* マウスカーソルを乗せたとき */
 a:hover {
-  color: #99ccff; /* さらに明るい水色 */
+  color: #82C83C; /* さらに明るい水色 */
   text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
 /* クリックした瞬間 */
 a:active {
-  color: #ff6666;
+  color: #5C288F;
 }
 
 .profile{
@@ -342,7 +328,7 @@ a:active {
   padding-top: 16px;
   padding-right:32px;
   border-radius: 32px;
-  background-color:rgb(92, 78, 96);
+  background-color:#5C288F;
   height: 80px;
 }
 
