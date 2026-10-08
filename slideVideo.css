@@ -1,0 +1,138 @@
+/* --- スライドショー関連のスタイル（サイズ拡大版） --- */
+.slideshow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px; /* 1000px → 1200px に拡大 */
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px; /* 330px → 420px に拡大 */
+}
+
+/* スライドアイテム（デフォルトは非表示） */
+.slide-item {
+  display: none;
+  flex-direction: row; /* 横並び設定（動画が左、説明が右） */
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* アクティブなスライドのみ表示 */
+.slide-item.active {
+  display: flex;
+}
+
+/* 動画エリア（左側：動画を大きく拡大） */
+.video-box {
+  flex: 0 0 640px;   /* 500px → 640px に拡大 */
+  max-width: 60%;    /* 50% → 60% に拡大 */
+  aspect-ratio: 16 / 9;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+/* 説明エリア（右側） */
+.desc-box {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.game-title {
+  font-size: 1.7rem; /* 文字サイズも少し拡大 */
+  font-weight: bold;
+  color: #82C83C;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #82C83C;
+  padding-bottom: 4px;
+}
+
+.game-genre {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #5C8F28;
+}
+
+.game-concept {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* 切り替えボタン */
+.slide-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 52px;  /* 44px → 52px に少し拡大 */
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.slide-btn:hover {
+  background: #82C83C;
+  transform: scale(1.1);
+}
+
+/* インジケーター（ドット） */
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.slide-dots .dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.slide-dots .dot.active {
+  background: #82C83C;
+  transform: scale(1.2);
+}
+
+/* レスポンシブ対応（画面が狭い場合は縦並び） */
+@media (max-width: 860px) {
+  .slide-item {
+    flex-direction: column;
+  }
+  .video-box {
+    max-width: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}

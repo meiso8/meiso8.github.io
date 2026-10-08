@@ -6,10 +6,11 @@
   <meta charset="utf-8">
   <title>meiso架空株式会社</title>
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="slideVideo.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="glitch.js" defer></script>
-    <script src="stalker.js" defer></script>
-        <script src="slide.js" defer></script>
+  <script src="stalker.js" defer></script>
+  <script src="slide.js" defer></script>
   <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
 </head>
@@ -59,128 +60,273 @@
   </div>
 
 
-  <h2 class = "headTitle">Artworks</h2>
-  <div class ="center">
+  <h2 class="headTitle">Artworks</h2>
+  <div class="center">
     <ul class="slideshow-zoom">
-    <li><img src="Images/forYoutube _imageMeditate.jpg" alt="背景" /></li>
-    <li><img src="Images/me.png" alt="背景" /></li>
-    <li><img src="Images/image.png" alt="背景" /></li>
+      <li><img src="Images/forYoutube _imageMeditate.jpg" alt="背景" /></li>
+      <li><img src="Images/me.png" alt="背景" /></li>
+      <li><img src="Images/image.png" alt="背景" /></li>
     </ul>
-    <div class ="paddingLeft">
+    <div class="paddingLeft">
       <h2>アイテム獲得</h2>
-    <div class ="paddingBottom">誕生日プレゼントとして中学生から使用しており、
-      <br>研磨されているワコムの板タブレット
-      <br>デジタルイラストにどっぷりハマったのは
-      <br>高校生の頃で線画から逃避した結果厚塗りしている。</div>
-    <img src="Images/wacom.jpg" alt="wacomの板タブレット" />
+      <div class="paddingBottom">誕生日プレゼントとして中学生から使用しており、
+        <br>研磨されているワコムの板タブレット
+        <br>デジタルイラストにどっぷりハマったのは
+        <br>高校生の頃で線画から逃避した結果厚塗りしている。
+      </div>
+      <img src="Images/wacom.jpg" alt="wacomの板タブレット" />
     </div>
-</div>
-  <h2 class = "headTitle">Sounds</h2>
-  <div class ="center">
-     <div>
-  <div>KIRITAN</div>
-  <audio controls src="Sounds/kiritan.mp3"></audio>
   </div>
-       <div>
-    <div>MEDJED</div>
-  <audio controls src="Sounds/medjed.mp3"></audio>
-  </div>
-     <div>
+  <h2 class="headTitle">Sounds</h2>
+  <div class="center">
+    <div>
+      <div>KIRITAN</div>
+      <audio controls src="Sounds/kiritan.mp3"></audio>
+    </div>
+    <div>
+      <div>MEDJED</div>
+      <audio controls src="Sounds/medjed.mp3"></audio>
+    </div>
+    <div>
       <div>DREAM CORE</div>
-  <audio controls src="Sounds/dreamcore.mp3"></audio>
+      <audio controls src="Sounds/dreamcore.mp3"></audio>
+    </div>
+    <div>
+      <div>MEDITATE</div>
+      <audio controls src="Sounds/Meditate.wav"></audio>
+    </div>
   </div>
-  <div>
-        <div>MEDITATE</div>
-  <audio controls src="Sounds/Meditate.wav"></audio>
-  </div>
-  </div>
-  <h2 class = "headTitle">Games</h2>
+  <h2 class="headTitle">Games</h2>
+
   <!-- 3年生 -->
   <section class="year-section">
     <h2 class="year-title">3rd grade</h2>
-    <div class="video-grid">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GyhXxjmnfzc?si=mZ71hldp6F4AKw2u"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MvWyyMli2zQ?si=8R5-hrNS32ZfYodu"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <div class="slideshow-wrapper">
+      <button class="slide-btn prev">&lt;</button>
+
+      <div class="slideshow-container">
+        <!-- 1組目 -->
+        <div class="slide-item active">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/GyhXxjmnfzc?si=mZ71hldp6F4AKw2u" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">第Ⅲのめ</div>
+            <div class="game-genre">ジャンル：謎解きアドベンチャーゲーム</div>
+                <div class="game-engine"><a href="https://github.com/meiso8/ButtobiEngine.git">ButtobiEngine</a></div>
+            <div class="game-concept">古代エジプト展の謎を解き明かせ。</div>
+          </div>
+        </div>
+
+        <!-- 2組目 -->
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/MvWyyMli2zQ?si=8R5-hrNS32ZfYodu" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">p-再打刻</div>
+            <div class="game-genre">ジャンル：探索ゲーム</div>
+                 <div class = "game-engine">友人のエンジン</div>
+            <div class="game-concept">紳士の精神世界アハ体験。プレイヤーを困惑させよう。</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-btn next">&gt;</button>
     </div>
+    <div class="slide-dots"></div>
   </section>
 
   <!-- 2年生 -->
   <section class="year-section">
     <h2 class="year-title">2nd grade</h2>
-    <div class="video-grid">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/aHW6JxceGR8?si=D2A28nioQ6phliW7"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/C031Eog4wak?si=bh8eWxKXAfhkdqEo"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DNLn0Oao6Gw?si=p3WDyjDnIRKtqh4A"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ENN6ZEJo_yU?si=KvEehEcWazNVX0Va"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/alKtlsB2S9M?si=RLDPCuV8LfZ5IwAC"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <div class="slideshow-wrapper">
+      <button class="slide-btn prev">&lt;</button>
+
+      <div class="slideshow-container">
+        <div class="slide-item active">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/aHW6JxceGR8?si=D2A28nioQ6phliW7" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">歪んだパドル</div>
+            <div class="game-genre">ジャンル：ピンポンゲー</div>
+            <div class = "game-engine">友人のエンジン</div>
+            <div class="game-concept">まるでアーケードゲームのようにキャラクターがピンポンを応援する！</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/C031Eog4wak?si=bh8eWxKXAfhkdqEo" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">ベリべリベンジ！</div>
+            <div class="game-genre">ジャンル：アクション</div>
+                <div class="game-engine"><a href="https://github.com/meiso8/ButtobiEngine.git">ButtobiEngine</a></div>
+            <div class="game-concept">ベリべリ床をはがして連結してカラスに当てよう！</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/DNLn0Oao6Gw?si=p3WDyjDnIRKtqh4A" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">ぶっとびミックス</div>
+            <div class="game-genre">ジャンル：アクション</div>
+                <div class="game-engine"><a href="https://github.com/meiso8/ButtobiEngine.git">ButtobiEngine</a></div>
+            <div class="game-concept">フルーツをぶつけてスコアを稼げ！</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/ENN6ZEJo_yU?si=KvEehEcWazNVX0Va" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">シフトトゥ</div>
+            <div class="game-genre">ジャンル：パズルアクション</div>
+              <div class="game-engine">友人のエンジン</div>
+            <div class="game-concept">領〇展開！移動ブロックを移動させてゴールにたどり着こう！</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/alKtlsB2S9M?si=RLDPCuV8LfZ5IwAC" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">ミラーキラー</div>
+            <div class="game-genre">ジャンル：アクションゲーム</div>
+            <div class="game-engine"><a href="https://github.com/meiso8/ButtobiEngine.git">ButtobiEngine</a></div>
+            <div class="game-concept">自分の姿を見て精神崩壊する前に鏡を割ろう！</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-btn next">&gt;</button>
     </div>
+    <div class="slide-dots"></div>
   </section>
 
   <!-- 1年生 -->
   <section class="year-section">
     <h2 class="year-title">1st grade</h2>
-    <div class="video-grid">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dC1gn0mVlDM?si=tGIDx-AMh1EHTXG8"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bdKvtehJcks?si=OPClUrjU6AzyngX5"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/UQdhFxWMgTM?si=8zZOxQWQMFqFvF6o"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/TKRdELL9Qqc?si=cIsKkvAPlowy1Vs7"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KIb9nz6DSJE?si=bX4AICdWTQq_Mb8a"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yEas5R9Ti8E?si=Mr8j8_JZeIyPVWT0"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <div class="slideshow-wrapper">
+      <button class="slide-btn prev">&lt;</button>
+
+      <div class="slideshow-container">
+        <div class="slide-item active">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/dC1gn0mVlDM?si=tGIDx-AMh1EHTXG8" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">CHRONO</div>
+            <div class="game-genre">ジャンル：シューティングゲーム</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">時を止めてまとめて攻撃！サイバーセキュリティゲーム</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/bdKvtehJcks?si=OPClUrjU6AzyngX5" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">こつねとぽぬぬの異世界ボスダッシュ！</div>
+            <div class="game-genre">ジャンル：リズムアクションゲーム</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">親子関係を使用したキャラクターのアニメーションをとくとご覧あれ</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/UQdhFxWMgTM?si=8zZOxQWQMFqFvF6o" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">サクッと！世界征服RTA</div>
+            <div class="game-genre">ジャンル：リズムアクションゲーム</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">サクッと王の座を奪おう！</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/TKRdELL9Qqc?si=cIsKkvAPlowy1Vs7" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">うんパズ</div>
+            <div class="game-genre">ジャンル：パズル</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">
+              テトリスとぷよぷよを掛け合わせたようなゲーム。ブリストルスケールと呼ばれる便の形状と硬さを7つのタイプに分類する世界共通の指標を元にミノを作成。水に流したいもの、共に流していきましょう。</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/KIb9nz6DSJE?si=bX4AICdWTQq_Mb8a" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">状態連鎖</div>
+            <div class="game-genre">ジャンル：ホラーアクション</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">流体と固体を交互に切り替え、とある研究施設から脱出しよう</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/yEas5R9Ti8E?si=Mr8j8_JZeIyPVWT0" title="YouTube video player"
+              frameborder="0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="desc-box">
+            <div class="game-title">だいじょうぶつ</div>
+            <div class="game-genre">ジャンル：シューティング</div>
+            <div class="game-engine">学内製エンジン</div>
+            <div class="game-concept">少子化の進む世界で、悪霊を成仏していく浄化物語</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-btn next">&gt;</button>
     </div>
+    <div class="slide-dots"></div>
   </section>
 
-
-  <h2 id="links">Links</h2>
+  <h2 class="headTitle">Links</h2>
   <div id="iconLinks">
     <a href="https://github.com/meiso8/ButtobiEngine" class="icons"><img src="Icons/GitHub_Invertocat_Black.png"
         alt="github" /></a>
     <a href="https://www.pixiv.net/users/65141145" class="icons"><img src="Icons/logo_icon_r.png" alt="pixiv" /></a>
     <a href="https://piapro.jp/hitotokurabezu8" class="icons"><img src="Icons/piaproIcon.jpg" alt="piapro" /></a>
     <a href="https://meiso.booth.pm" class="icons"><img src="Icons/logo.png" alt="booth" /></a>
+
     <a href="https://www.youtube.com/@Kinmirai_wotaku" class="icons"><img src="Icons/yt_icon_red_digital.png"
         alt="youtube" /></a>
+
   </div>
 
-    </div>
+  </div>
   <script>
     alert("meiso架空株式会社　あなたはこのサイトを信用しますか？私を信用しますか？");
   </script>
